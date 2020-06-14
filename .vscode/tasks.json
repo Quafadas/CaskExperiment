@@ -6,7 +6,7 @@
         {
             "label": "sbt run",
             "type": "shell",
-            "command": "sbt ~run"
+            "command": "sbt ~reStart"
         }
     ]
 }
