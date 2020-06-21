@@ -10,6 +10,11 @@ object MinimalApplication extends cask.MainRoutes{
     "Hello World It's simon"
   }
   
+  @cask.get("/queryParams")
+  def queryParams(params: Seq[String]) = {
+    params.mkString(",")
+  }
+  
   @cask.get("/do-thing")
   def dothing() = {
     sayHi
