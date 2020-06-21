@@ -5,6 +5,11 @@ object MinimalApplication extends cask.MainRoutes{
     "Hello World!"
   }
   
+  @cask.get("/hiSimon")
+  def HiSimon() = {
+    "Hello World It's simon"
+  }
+  
   @cask.get("/do-thing")
   def dothing() = {
     sayHi
